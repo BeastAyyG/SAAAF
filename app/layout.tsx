@@ -1,0 +1,80 @@
+import type { Metadata } from "next";
+import { Inter } from "next/font/google";
+import "./globals.css";
+import { Providers } from "./providers";
+
+import { Header } from "@/components/ui/header";
+
+const inter = Inter({ subsets: ["latin"] });
+
+import { CURRENT_DOMAIN } from "@/lib/url-config";
+
+export const metadata: Metadata = {
+  title: {
+    default: "SAAAF - Civic Shield",
+    template: "%s | SAAAF"
+  },
+  description: "AI-Powered Civic Reporting. Report potholes, garbage, and emergencies instantly with AI and Geo-tagging.",
+  applicationName: "SAAAF",
+  authors: [{ name: "SAAAF Team" }],
+  keywords: ["civic", "reporting", "ai", "smart city", "emergency", "india"],
+  manifest: "/manifest.json",
+  metadataBase: new URL(CURRENT_DOMAIN),
+  openGraph: {
+    type: "website",
+    locale: "en_IN",
+    url: CURRENT_DOMAIN,
+    title: "SAAAF - AI Civic Reporting",
+    description: "Report civic issues instantly with AI analysis and location tracking.",
+    siteName: "SAAAF",
+    images: [
+      {
+        url: "/logo.png",
+        width: 1200,
+        height: 630,
+        alt: "SAAAF App Interface",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SAAAF - Civic Shield",
+    description: "AI-Powered Civic Reporting & Response System",
+    images: ["/logo.png"],
+    creator: "@saaaf_app",
+  },
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: "black-translucent",
+    title: "SAAAF",
+  },
+};
+
+export const viewport = {
+  themeColor: "#ef4444",
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="en" suppressHydrationWarning>
+      <body className={inter.className}>
+        <Providers>
+          <div className="flex flex-col min-h-screen">
+            <Header />
+            <main className="flex-1">
+              {children}
+            </main>
+          </div>
+        </Providers>
+      </body>
+    </html>
+  );
+}
