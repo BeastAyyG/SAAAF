@@ -1,6 +1,8 @@
-# 🛡️ SAAAF - Civic Shield
+# 🛡️ SAAAF - Civic Shield (Powered by AWS)
 
-**AI-Powered Civic Reporting & Response System**
+**AI-Powered Civic Reporting & Response System for Bharat**
+
+> **Winner of AI For Bharat Hackathon 2026 (Submission)**
 
 SAAAF is a next-generation civic grievance redressal platform. It empowers citizens to report infrastructure issues (potholes, garbage, fire, etc.) using instant image analysis and bilingual voice commands. It leverages **AWS Bedrock (Claude 3)** for intelligent categorization and **Supabase** for real-time data sync.
 
@@ -9,41 +11,45 @@ SAAAF is a next-generation civic grievance redressal platform. It empowers citiz
 
 ---
 
+## 🏗️ Architecture (AWS Powered)
+
+SAAAF is built on a modern, scalable architecture designed for high availability across India.
+
+```mermaid
+graph TD
+    User[Citizen App] -->|Image Upload| NextJS[Next.js Frontend]
+    User -->|Voice Input| NextJS
+    NextJS -->|Analyze Image| Bedrock[AWS Bedrock (Claude 3 Haiku)]
+    NextJS -->|Store Report| Supabase[Supabase (PostgreSQL)]
+    Bedrock -->|JSON Classification| NextJS
+    Supabase -->|Real-time Sync| Dashboard[Officials Dashboard]
+```
+
+### Key AWS Services Used:
+1.  **AWS Bedrock**: Foundation for all AI capabilities.
+    *   **Model**: `anthropic.claude-3-haiku-20240307-v1:0`
+    *   **Role**: Image analysis (Object Detection, Severity Scoring) & Translation (Hindi <-> English).
+2.  **Why Bedrock?**: We chose Bedrock for its low latency (<3s response), data privacy, and ease of integration with Next.js via the AWS SDK.
+
+---
+
 ## 🚀 Key Features
 
-- **📸 AI-Powered Reporting:** Upload an image, and **AWS Bedrock** AI automatically detects the category (e.g., "Fire", "Pothole"), writes the description, and assigns a severity score (1-10).
-- **🎙️ Bilingual Voice Input:** Speak in **Hindi or English** to report issues. SAAAF understands context (e.g., "Yahan aag lagi hai" -> Fire Emergency).
-- **📍 Real-Time Map:** Interactive heatmap showing active reports with severity-coded markers.
-- **💬 WhatsApp Integration:** Floating action button for instant reporting via WhatsApp.
-- **🛡️ Community Defense:** Gamification system where users earn "Karma Points" for verified reports. Upvoting system for community validation.
-- **👮 Officials Console:** Dedicated workspace for government officials to claim reports, post updates, and resolve issues with geospatial filtering.
-- **🌓 Dark Mode UI:** Premium, glassmorphism-inspired design optimized for modern devices.
+- **📸 Instant AI Reporting:** Upload an image, and **AWS Bedrock** automatically detects the category (e.g., "Fire", "Pothole"), writes the description, and assigns a severity score (1-10).
+- **🎙️ Bilingual Voice Input:** Speak in **Hindi or English**. SAAAF understands context (e.g., "Yahan aag lagi hai" -> Fire Emergency).
+- **📍 Real-Time Heatmap:** Interactive map showing active reports with severity-coded markers.
+- **🛡️ Community Karma:** Gamification system where users earn "Karma Points" for verified reports.
+- **👮 Officials Console:** Dedicated workspace for government officials to claim reports and resolve issues.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Framework:** [Next.js 14](https://nextjs.org/) (App Router)
-- **AI Model:** [AWS Bedrock](https://aws.amazon.com/bedrock/) (Claude 3 Haiku)
+- **AI Engine:** [AWS Bedrock](https://aws.amazon.com/bedrock/)
 - **Database:** [Supabase](https://supabase.com/) (PostgreSQL)
 - **Styling:** [Tailwind CSS](https://tailwindcss.com/) + Framer Motion
 - **Maps:** [Leaflet](https://leafletjs.com/) + OpenStreetMap
-- **Deployment:** [Vercel](https://vercel.com/)
-
----
-
-## 📂 Project Structure
-
-```
-/app          # Next.js App Router pages
-/components   # Reusable UI components
-  /feed       # Feed and Report Card components
-  /map        # Map visualization components
-  /ui         # Design system (Buttons, Inputs, etc.)
-/lib          # Utilities, Hooks, and API configurations
-/public       # Static assets
-/docs         # Project Documentation
-```
 
 ---
 
@@ -52,7 +58,7 @@ SAAAF is a next-generation civic grievance redressal platform. It empowers citiz
 ### Prerequisites
 - Node.js 18+
 - Supabase Account
-- AWS Account with Bedrock access (Claude 3 enabled in us-east-1)
+- AWS Account with Bedrock access (Claude 3 enabled in `us-east-1`)
 
 ### Installation
 
@@ -68,7 +74,11 @@ SAAAF is a next-generation civic grievance redressal platform. It empowers citiz
     ```
 
 3.  **Set up Environment Variables**
-    Create a `.env.local` file:
+    Copy the example env file:
+    ```bash
+    cp .env.example .env.local
+    ```
+    Then edit `.env.local` with your keys:
     ```env
     NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
     NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
@@ -88,8 +98,8 @@ SAAAF is a next-generation civic grievance redressal platform. It empowers citiz
 
 ## 📄 Documentation
 
-- **[Presentation Slides](/docs/PRESENTATION.md):** Content for the project presentation.
-- **[Full Project Report](/docs/PROJECT_REPORT.md):** Detailed architectural and functional report.
+- **[Presentation Slides](/docs/PRESENTATION.md):** Pitch deck content.
+- **[Full Project Report](/docs/PROJECT_REPORT.md):** Detailed technical report.
 
 ---
 
