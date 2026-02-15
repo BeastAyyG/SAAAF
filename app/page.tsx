@@ -1,17 +1,35 @@
 import ClientHome from "./client-home";
 import { createClient } from "@/lib/supabase-server";
 import type { Report } from "@/lib/types";
+import { MOCK_REPORTS } from "@/lib/demo-data";
 
 export const revalidate = 0; // Disable cache for real-time feel
 export const dynamic = "force-dynamic";
 
-// MOCK MODE: Set to true during Supabase outage to bypass DB calls
-const MOCK_MODE = false; // Supabase integration enabled
+// DEMO MODE: Set to true to use mock data for demo purposes
+const DEMO_MODE = true; // Enable demo mode with mock data
 
 export default async function Home() {
-  // Skip DB during outage/maintenance if flag is on
-  if (MOCK_MODE) {
-    return <ClientHome reports={[]} />;
+  // Use demo data if DEMO_MODE is enabled
+  if (DEMO_MODE) {
+    // Convert mock reports to match the Report type
+    const demoReports: Report[] = MOCK_REPORTS.map(report => ({
+      id: report.id,
+      category: report.category,
+      severity: report.severity_score,
+      description: report.description,
+      lat: report.latitude,
+      lng: report.longitude,
+      image_url: report.image_url,
+      status: report.status.toUpperCase() as "OPEN" | "IN_PROGRESS" | "RESOLVED",
+      upvotes: report.upvotes,
+      created_at: report.created_at,
+      user_id: report.user_id,
+      image_hash: null,
+      officer_id: null,
+      priority: "NORMAL"
+    }));
+    return <ClientHome reports={demoReports} />;
   }
 
   // Fetch Real Data from Supabase
@@ -34,6 +52,27 @@ export default async function Home() {
     } catch (err) {
       console.error("Unexpected error:", err);
     }
+  }
+
+  // Fallback to demo data if no reports found
+  if (reports.length === 0) {
+    const demoReports: Report[] = MOCK_REPORTS.map(report => ({
+      id: report.id,
+      category: report.category,
+      severity: report.severity_score,
+      description: report.description,
+      lat: report.latitude,
+      lng: report.longitude,
+      image_url: report.image_url,
+      status: report.status.toUpperCase() as "OPEN" | "IN_PROGRESS" | "RESOLVED",
+      upvotes: report.upvotes,
+      created_at: report.created_at,
+      user_id: report.user_id,
+      image_hash: null,
+      officer_id: null,
+      priority: "NORMAL"
+    }));
+    return <ClientHome reports={demoReports} />;
   }
 
   return <ClientHome reports={reports} />;
