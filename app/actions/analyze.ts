@@ -3,8 +3,8 @@
 import { invokeBedrockWithImage } from "@/lib/bedrock";
 import { type AnalysisResult } from "@/lib/types";
 
-// MOCK MODE: Set to true to bypass API calls
-const MOCK_MODE = false;
+// MOCK MODE: Auto-enable if AWS keys are missing
+const MOCK_MODE = process.env.MOCK_MODE === "true" || !process.env.AWS_ACCESS_KEY_ID;
 const MAX_RETRIES = 3;
 
 function cleanJsonString(text: string): string {
@@ -22,14 +22,17 @@ function delay(ms: number) {
 }
 
 export async function analyzeImageAction(formData: FormData): Promise<AnalysisResult> {
+    // Check if we should run in mock mode
     if (MOCK_MODE) {
         console.log("🔧 MOCK MODE: Returning simulated analysis");
         await delay(1500);
         return {
             category: "Pothole",
             severityScore: 7,
-            description: "[MOCK] This is simulated analysis."
-        };
+            description: "[MOCK DEMO] Large Pothole detected on asphalt road. High risk to vehicles.",
+            priority: "HIGH",
+            isEmergency: false
+        } as AnalysisResult;
     }
 
     const file = formData.get("image") as File;
