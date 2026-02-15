@@ -1,104 +1,78 @@
 # 🛡️ SAAAF - Civic Shield Presentation Slides
 
-> **Instructions:** Use the content below to create exactly **6 Slides**. 
-> **Footer Requirement:** Every slide MUST have the GitHub Link: `https://github.com/500ka/SAAAF`
+> **Instructions:** Use the content below to populate your PowerPoint template. Export as PDF for submission.
 
 ---
 
-## Slide 1: Title and Introduction
-
-**[Center Alignment]**
-
+## Slide 1: Title
 # **SAAAF (Civic Shield)**
 ### **AI-Powered Civic Reporting & Response System**
 
-**Team Name:** [Insert Team Name]
-**Team Members:** [Member 1], [Member 2], [Member 3], [Member 4]
-**Hackathon:** [Hackathon Name]
-**Problem Domain:** Smart Cities & Civic Grievance Redressal
-
-**GitHub Repository:** `https://github.com/BeastAyyG/SAAAFv2`
+**Tagline:** Protecting Bharat with AI & AWS Bedrock
+**Theme:** AI For Bharat / Smart Cities
+**GitHub Repository:** `https://github.com/BeastAyyG/SAAAF`
 
 ---
 
-## Slide 2: Problem and Motivation
+## Slide 2: Problem Statement
+**The Challenge:**
+1.  **Slow Reporting:** Citizens struggle with complex forms to report simple issues like potholes or garbage.
+2.  **Language Barrier:** Non-English speakers find it hard to navigate existing apps.
+3.  **Lack of Verification:** Authorities receive spam or unclear reports, making prioritization impossible.
+4.  **No Feedback Loop:** Citizens never know if their report was acted upon.
 
-**The Problem:**
-Citizen grievance reporting is currently **fragmented, slow, and unresponsive**. Users face complex forms, lack of transparency, and language barriers (e.g., non-English speakers). Authorities struggle with duplicate reports and lack of prioritized data.
-
-**Motivation:**
-- **Who benefits?** Citizens (easy reporting), Municipalities (cleaned data), Society (faster fixes).
-- **Gaps:** Existing apps lack **real-time verification**, **multi-lingual support**, and **automated severity filtering**.
-- **Our Goal:** To democratize civic reporting using AI, making it accessible even to those who cannot type, through Voice and WhatsApp.
-
-**GitHub Repository:** `https://github.com/BeastAyyG/SAAAFv2`
+**Our Motivation:**
+To democratize civic reporting using **Generative AI**, making it accessible to every Indian citizen through simple images and voice commands.
 
 ---
 
 ## Slide 3: Solution Overview
-
-**Concept:**
-SAAAF is a **hyper-local, AI-first civic engagement platform** that bridges the gap between citizens and authorities.
+**SAAAF** is a hyper-local, AI-first Progressive Web App (PWA) that bridges the gap between citizens and authorities.
 
 **Key Features:**
-1.  **📸 AI Analysis:** Automatically categorizes reports (Fire, Pothole, Garbage) and assigns severity (1-10) using Gemini 1.5 Flash.
-2.  **🎙️ Voice-First:** Supports **Hindi & English** voice reporting for accessibility.
-3.  **📍 Smart Mapping:** Real-time geospatial tracking of issues.
-4.  **💬 WhatsApp Integration:** Report issues directly via familiar chat interfaces.
-5.  **🛡️ Community Defense:** Upvoting and verification to filter spam.
-
-**GitHub Repository:** `https://github.com/BeastAyyG/SAAAFv2`
+1.  **📸 Instant AI Analysis:** Upload a photo -> **AWS Bedrock (Claude 3)** instantly detects the issue (e.g., "Fire", "Pothole"), writes the description, and assigns a Severity Score (1-10).
+2.  **🎙️ Bilingual Voice:** Supports **Hindi & English** voice input. "Yaha kooda hai" -> Automatically categorized as Garbage Dump.
+3.  **📍 Real-Time Heatmap:** Interactive map showing critical issues with color-coded severity markers.
+4.  **🛡️ Gamification:** Users earn "Karma Points" for verified reports.
+5.  **👮 Official Console:** Dedicated dashboard for authorities to claim and resolve issues.
 
 ---
 
-## Slide 4: Technology and Architecture
-
-**Tech Stack:**
-- **Frontend:** Next.js 14, Tailwind CSS, Framer Motion (Premium UI).
-- **AI Engine:** Google Gemini 1.5 Flash (Multimodal Analysis).
-- **Backend:** Supabase (PostgreSQL, Realtime Auth).
-- **Geolocation:** Leaflet Maps (OpenStreetMap).
+## Slide 4: Technology Stack (AWS Powered)
+**Frontend:** Next.js 14, Tailwind CSS, Framer Motion
+**AI Engine:** **AWS Bedrock** (Claude 3 Haiku Model)
+**Database:** Supabase (PostgreSQL, Realtime)
+**Maps:** Leaflet + OpenStreetMap
 
 **Architecture:**
-User (Voice/Image) ➡️ **Frontend** ➡️ **Gemini AI** (Analyze) ➡️ **Supabase DB** ➡️ **Map Dashboard** (Officer/Public)
+User (Image/Voice) ➡️ **Next.js API** ➡️ **AWS Bedrock** (Analysis) ➡️ **Supabase DB** ➡️ **Dashboard**
 
-**Data Flow:**
-1.  Image Upload -> AI Extracts Data -> Auto-fill Form.
-2.  Voice Command -> Speech-to-Text -> Intent Detection -> Form.
-
-**GitHub Repository:** `https://github.com/BeastAyyG/SAAAFv2`
-
----
-
-## Slide 5: Implementation and Results
-
-**What We Built:**
-A fully functional **PWA (Progressive Web App)** with:
-- **✅ Live Camera Analysis:** Detects "Fire" or "Potholes" instantly.
-- **✅ Bilingual Input:** "Yahan aag lagi hai" -> Recognized as Fire Emergency.
-- **✅ Gamification:** Users earn "Karma Points" for verified reports.
-- **✅ Dark Mode UI:** Premium, battery-saving aesthetics.
-
-**Proof of Execution:**
-- *[Insert Screenshot 1: AI Analyzing a Pothole]*
-- *[Insert Screenshot 2: Map View with Severity Markers]*
-- *[Insert Screenshot 3: WhatsApp Report Button]*
-
-**GitHub Repository:** `https://github.com/BeastAyyG/SAAAFv2`
+**Why AWS Bedrock?**
+-   **Speed:** <3s response time for image analysis.
+-   **Security:** Enterprise-grade data protection.
+-   **Accuracy:** Superior understanding of Indian context in images.
 
 ---
 
-## Slide 6: Conclusion and Future Scope
+## Slide 5: Impact & Business Value
+**For Citizens:**
+-   **90% faster** reporting (Click -> Done in 5 seconds).
+-   **Accessibility** for non-tech savvy users via Voice.
 
-**Conclusion:**
-SAAAF successfully demonstrates how **GenAI** can streamline civic governance. We reduced reporting time from **minutes to seconds** and added accessibility for millions of non-English speakers.
+**For Government:**
+-   **Automated Triage:** AI filters spam and prioritizes high-severity issues (e.g., Open Manholes, Fire).
+-   **Data-Driven:** Heatmaps reveal infrastructure weak points.
 
-**Future Scope:**
-1.  **Integration:** Connect APIs directly with Municipal Corporation (MCD/BMC).
-2.  **IoT Integration:** Auto-detect issues via smart city sensors.
-3.  **Offline Mode:** Report via SMS for low-connectivity areas.
-4.  **Blockchain:** Immutable record of grievances for transparency.
+**Scalability:**
+-   Built on Serverless architecture (Vercel + AWS) to handle millions of reports.
+
+---
+
+## Slide 6: Future Scope
+1.  **IoT Integration:** Auto-detect issues via smart city sensors.
+2.  **WhatsApp Bot:** Report directly via WhatsApp API.
+3.  **Blockchain:** Immutable record of grievances for transparency.
+4.  **Vernacular Support:** Expand to 10+ Indian languages using AWS Translate.
 
 **Thank You!**
-
-**GitHub Repository:** `https://github.com/500ka/SAAAF`
+**Repo:** `https://github.com/BeastAyyG/SAAAF`
