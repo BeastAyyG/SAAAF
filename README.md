@@ -6,8 +6,7 @@
 
 SAAAF is a next-generation civic grievance redressal platform. It empowers citizens to report infrastructure issues (potholes, garbage, fire, etc.) using instant image analysis and bilingual voice commands. It leverages **AWS Bedrock (Claude 3)** for intelligent categorization and **Supabase** for real-time data sync.
 
-![Banner](/public/banner.png) 
-*(Please add a banner image here)*
+> ⚠️ **Deployment Note:** Production deployment is currently being configured. See [Issue #1](https://github.com/BeastAyyG/SAAAF/issues/1) for status.
 
 ---
 
@@ -36,7 +35,7 @@ graph TD
 ## 🚀 Key Features
 
 - **📸 Instant AI Reporting:** Upload an image, and **AWS Bedrock** automatically detects the category (e.g., "Fire", "Pothole"), writes the description, and assigns a severity score (1-10).
-- **🎙️ Bilingual Voice Input:** Speak in **Hindi or English**. SAAAF understands context (e.g., "Yahan aag lagi hai" -> Fire Emergency).
+- **🎤 Bilingual Voice Input:** Speak in **Hindi or English**. SAAAF understands context (e.g., "Yahan aag lagi hai" -> Fire Emergency).
 - **📍 Real-Time Heatmap:** Interactive map showing active reports with severity-coded markers.
 - **🛡️ Community Karma:** Gamification system where users earn "Karma Points" for verified reports.
 - **👮 Officials Console:** Dedicated workspace for government officials to claim reports and resolve issues.
