@@ -1,0 +1,112 @@
+{
+    "common": {
+        "appName": "SAAAF",
+        "tagline": "AI-ਸੰਚਾਲਿਤ ਨਾਗਰਿਕ ਸ਼ਿਕਾਇਤ ਪਲੇਟਫਾਰਮ",
+        "login": "ਲੌਗਿਨ",
+        "logout": "ਲੌਗ ਆਉਟ",
+        "submit": "ਜਮ੍ਹਾਂ ਕਰੋ",
+        "cancel": "ਰੱਦ ਕਰੋ",
+        "save": "ਸੁਰੱਖਿਅਤ ਕਰੋ",
+        "delete": "ਮਿਟਾਓ",
+        "edit": "ਸੋਧੋ",
+        "view": "ਦੇਖੋ",
+        "close": "ਬੰਦ ਕਰੋ",
+        "loading": "ਲੋਡ ਹੋ ਰਿਹਾ ਹੈ...",
+        "error": "ਗਲਤੀ",
+        "success": "ਸਫਲ"
+    },
+    "nav": {
+        "feed": "ਫੀਡ",
+        "map": "ਨਕਸ਼ਾ",
+        "analytics": "ਵਿਸ਼ਲੇਸ਼ਣ",
+        "officer": "ਅਧਿਕਾਰੀ ਪੈਨਲ",
+        "profile": "ਪ੍ਰੋਫਾਈਲ"
+    },
+    "home": {
+        "title": "ਭਾਈਚਾਰਕ ਰਿਪੋਰਟਾਂ",
+        "subtitle": "ਦਰਜ ਕੀਤੀਆਂ ਸਮੱਸਿਆਵਾਂ",
+        "open": "ਖੁੱਲ੍ਹਾ",
+        "resolved": "ਹੱਲ ਹੋਇਆ",
+        "noReports": "ਅਜੇ ਕੋਈ ਰਿਪੋਰਟ ਨਹੀਂ",
+        "noReportsDesc": "ਆਪਣੇ ਖੇਤਰ ਵਿੱਚ ਪਹਿਲੀ ਸਮੱਸਿਆ ਰਿਪੋਰਟ ਕਰੋ!",
+        "viewOnMap": "ਨਕਸ਼ੇ 'ਤੇ ਦੇਖੋ",
+        "totalReports": "ਕੁੱਲ ਰਿਪੋਰਟਾਂ",
+        "openIssues": "ਖੁੱਲ੍ਹੇ ਮੁੱਦੇ",
+        "filter": {
+            "all": "ਸਾਰੇ",
+            "pothole": "ਟੋਆ",
+            "garbage": "ਕੂੜਾ",
+            "streetLight": "ਸੜਕ ਦੀ ਰੋਸ਼ਨੀ",
+            "waterLeak": "ਪਾਣੀ ਦੀ ਲੀਕ"
+        }
+    },
+    "report": {
+        "title": "ਸਮੱਸਿਆ ਰਿਪੋਰਟ ਕਰੋ",
+        "takePhoto": "ਫੋਟੋ ਲੈਣ ਲਈ ਟੈਪ ਕਰੋ",
+        "analyzing": "AI ਦ੍ਰਿਸ਼ ਦਾ ਵਿਸ਼ਲੇਸ਼ਣ ਕਰ ਰਿਹਾ ਹੈ...",
+        "detected": "ਪਛਾਣਿਆ ਗਿਆ",
+        "severity": "ਗੰਭੀਰਤਾ",
+        "description": "ਵੇਰਵਾ",
+        "submitReport": "ਰਿਪੋਰਟ ਜਮ੍ਹਾਂ ਕਰੋ",
+        "xpReward": "+50 XP",
+        "duplicateTitle": "ਧੋਖਾਧੜੀ ਚੇਤਾਵਨੀ!",
+        "duplicateDesc": "ਇਹ ਫੋਟੋ ਮੌਜੂਦਾ ਰਿਪੋਰਟ ਨਾਲ ਮੇਲ ਖਾਂਦੀ ਹੈ।",
+        "reportAnyway": "ਫਿਰ ਵੀ ਰਿਪੋਰਟ ਕਰੋ",
+        "aiConfidence": "AI ਭਰੋਸਾ"
+    },
+    "officer": {
+        "title": "ਅਧਿਕਾਰੀ ਡੈਸ਼ਬੋਰਡ",
+        "subtitle": "ਨਾਗਰਿਕ ਰਿਪੋਰਟਾਂ ਦਾ ਪ੍ਰਬੰਧਨ ਕਰੋ",
+        "search": "ਰਿਪੋਰਟਾਂ ਖੋਜੋ...",
+        "inProgress": "ਪ੍ਰਗਤੀ ਵਿੱਚ",
+        "location": "ਸਥਾਨ",
+        "upvotes": "ਅਪਵੋਟਸ",
+        "date": "ਮਿਤੀ",
+        "actions": "ਕਾਰਵਾਈਆਂ",
+        "updateStatus": "ਸਥਿਤੀ ਅੱਪਡੇਟ ਕਰੋ",
+        "setPriority": "ਤਰਜੀਹ ਸੈੱਟ ਕਰੋ",
+        "priority": {
+            "urgent": "ਜ਼ਰੂਰੀ",
+            "high": "ਉੱਚ",
+            "normal": "ਆਮ",
+            "low": "ਘੱਟ"
+        }
+    },
+    "analytics": {
+        "title": "ਵਿਸ਼ਲੇਸ਼ਣ ਡੈਸ਼ਬੋਰਡ",
+        "subtitle": "ਨਾਗਰਿਕ ਰਿਪੋਰਟਿੰਗ ਦੇ ਰੁਝਾਨ ਦੇਖੋ",
+        "resolutionRate": "ਹੱਲ ਦਰ",
+        "avgResolutionTime": "ਔਸਤ ਹੱਲ ਸਮਾਂ",
+        "activeCitizens": "ਸਰਗਰਮ ਨਾਗਰਿਕ",
+        "reportsByCategory": "ਸ਼੍ਰੇਣੀ ਅਨੁਸਾਰ ਰਿਪੋਰਟਾਂ",
+        "weeklyReports": "ਹਫਤਾਵਾਰੀ ਰਿਪੋਰਟਾਂ",
+        "topAreas": "ਚੋਟੀ ਦੇ ਖੇਤਰ"
+    },
+    "profile": {
+        "level": "ਪੱਧਰ",
+        "rank": "ਦਰਜਾ",
+        "badges": "ਬੈਜ",
+        "leaderboard": "ਲੀਡਰਬੋਰਡ",
+        "reports": "ਰਿਪੋਰਟਾਂ",
+        "upvotes": "ਅਪਵੋਟਸ",
+        "xpToNext": "ਅਗਲੇ ਪੱਧਰ ਲਈ XP"
+    },
+    "badges": {
+        "firstReport": "ਪਹਿਲੀ ਰਿਪੋਰਟ",
+        "activeCitizen": "ਸਰਗਰਮ ਨਾਗਰਿਕ",
+        "guardian": "ਰਾਖਾ",
+        "champion": "ਚੈਂਪੀਅਨ",
+        "influencer": "ਪ੍ਰਭਾਵਸ਼ਾਲੀ",
+        "problemSolver": "ਸਮੱਸਿਆ ਹੱਲ ਕਰਨ ਵਾਲਾ"
+    },
+    "status": {
+        "open": "ਖੁੱਲ੍ਹਾ",
+        "inProgress": "ਪ੍ਰਗਤੀ ਵਿੱਚ",
+        "resolved": "ਹੱਲ ਹੋਇਆ"
+    },
+    "severity": {
+        "low": "ਘੱਟ",
+        "medium": "ਦਰਮਿਆਨੀ",
+        "critical": "ਗੰਭੀਰ"
+    }
+}

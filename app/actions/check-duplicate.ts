@@ -1,6 +1,7 @@
 "use server";
 
 import { createClient } from "@/lib/supabase-server";
+import { generateEmbedding, cosineSimilarity, buildComplaintText } from "@/lib/embeddings";
 
 export interface DuplicateCheckResult {
     isDuplicate: boolean;
@@ -104,6 +105,73 @@ export async function checkDuplicateAction(formData: FormData): Promise<Duplicat
                     },
                     reason: `A similar report was made in this area recently (${nearbyReports.length} report(s) nearby)`,
                 };
+            }
+        }
+
+        // Step 4: Vector embedding similarity within 500m radius (last 7 days)
+        const category = (formData.get("category") as string) || "";
+        const description = (formData.get("description") as string) || "";
+
+        if (category || description) {
+            const newEmbedding = await generateEmbedding(
+                buildComplaintText(category, description)
+            );
+
+            if (newEmbedding.length > 0 && lat && lng) {
+                const latRadius500m = 0.0045; // ~500m
+                const lngRadius500m = 0.0045;
+                const sevenDaysAgo = new Date(
+                    Date.now() - 7 * 24 * 60 * 60 * 1000
+                ).toISOString();
+
+                const { data: candidates } = await supabase
+                    .from("reports")
+                    .select("id, category, description, created_at, status, lat, lng, embedding")
+                    .gte("lat", lat - latRadius500m)
+                    .lte("lat", lat + latRadius500m)
+                    .gte("lng", lng - lngRadius500m)
+                    .lte("lng", lng + lngRadius500m)
+                    .gte("created_at", sevenDaysAgo)
+                    .not("embedding", "is", null)
+                    .limit(20);
+
+                if (candidates && candidates.length > 0) {
+                    let bestMatch: (typeof candidates)[0] | null = null;
+                    let bestSim = 0;
+
+                    for (const candidate of candidates) {
+                        try {
+                            const existingVec: number[] =
+                                typeof candidate.embedding === "string"
+                                    ? JSON.parse(candidate.embedding)
+                                    : candidate.embedding;
+                            const sim = cosineSimilarity(newEmbedding, existingVec);
+                            if (sim > bestSim) {
+                                bestSim = sim;
+                                bestMatch = candidate;
+                            }
+                        } catch {
+                            // skip malformed embedding
+                        }
+                    }
+
+                    // Threshold: 0.85 cosine similarity = semantically near-identical
+                    if (bestSim >= 0.85 && bestMatch) {
+                        return {
+                            isDuplicate: true,
+                            similarityScore: Math.round(bestSim * 100),
+                            existingReport: {
+                                id: bestMatch.id,
+                                category: bestMatch.category,
+                                created_at: bestMatch.created_at,
+                                status: bestMatch.status,
+                                lat: bestMatch.lat,
+                                lng: bestMatch.lng,
+                            },
+                            reason: `Semantically similar complaint exists within 500m (${Math.round(bestSim * 100)}% match)`,
+                        };
+                    }
+                }
             }
         }
 

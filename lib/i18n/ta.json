@@ -1,0 +1,112 @@
+{
+    "common": {
+        "appName": "SAAAF",
+        "tagline": "AI-இயக்கப்படும் குடிமை அறிக்கையிடல்",
+        "login": "உள்நுழை",
+        "logout": "வெளியேறு",
+        "submit": "சமர்ப்பி",
+        "cancel": "ரத்துசெய்",
+        "save": "சேமி",
+        "delete": "நீக்கு",
+        "edit": "திருத்து",
+        "view": "பார்",
+        "close": "மூடு",
+        "loading": "ஏற்றுகிறது...",
+        "error": "பிழை",
+        "success": "வெற்றி"
+    },
+    "nav": {
+        "feed": "ஊட்டம்",
+        "map": "வரைபடம்",
+        "analytics": "பகுப்பாய்வு",
+        "officer": "அதிகாரி பேனல்",
+        "profile": "சுயவிவரம்"
+    },
+    "home": {
+        "title": "சமூக அறிக்கைகள்",
+        "subtitle": "பிரச்சினைகள் அறிக்கையிடப்பட்டன",
+        "open": "திறந்த",
+        "resolved": "தீர்க்கப்பட்டது",
+        "noReports": "இன்னும் அறிக்கைகள் இல்லை",
+        "noReportsDesc": "உங்கள் பகுதியில் முதல் பிரச்சினையை அறிக்கையிடுங்கள்!",
+        "viewOnMap": "வரைபடத்தில் பார்",
+        "totalReports": "மொத்த அறிக்கைகள்",
+        "openIssues": "திறந்த பிரச்சினைகள்",
+        "filter": {
+            "all": "அனைத்தும்",
+            "pothole": "குழி",
+            "garbage": "குப்பை",
+            "streetLight": "தெரு விளக்கு",
+            "waterLeak": "நீர் கசிவு"
+        }
+    },
+    "report": {
+        "title": "பிரச்சினையை அறிக்கையிடு",
+        "takePhoto": "புகைப்படம் எடுக்க தட்டு",
+        "analyzing": "AI காட்சியை பகுப்பாய்வு செய்கிறது...",
+        "detected": "கண்டறியப்பட்டது",
+        "severity": "தீவிரம்",
+        "description": "விவரம்",
+        "submitReport": "அறிக்கையை சமர்ப்பி",
+        "xpReward": "+50 XP",
+        "duplicateTitle": "மோசடி எச்சரிக்கை!",
+        "duplicateDesc": "இந்த புகைப்படம் ஏற்கனவே உள்ள அறிக்கையுடன் பொருந்துகிறது.",
+        "reportAnyway": "எப்படியும் அறிக்கையிடு",
+        "aiConfidence": "AI நம்பகத்தன்மை"
+    },
+    "officer": {
+        "title": "அதிகாரி டாஷ்போர்டு",
+        "subtitle": "குடிமை அறிக்கைகளை நிர்வகி",
+        "search": "அறிக்கைகளை தேடு...",
+        "inProgress": "செயல்பாட்டில்",
+        "location": "இடம்",
+        "upvotes": "மேல் வாக்குகள்",
+        "date": "தேதி",
+        "actions": "செயல்கள்",
+        "updateStatus": "நிலையை புதுப்பி",
+        "setPriority": "முன்னுரிமை அமை",
+        "priority": {
+            "urgent": "அவசரம்",
+            "high": "உயர்",
+            "normal": "சாதாரண",
+            "low": "குறைந்த"
+        }
+    },
+    "analytics": {
+        "title": "பகுப்பாய்வு டாஷ்போர்டு",
+        "subtitle": "குடிமை அறிக்கையிடல் போக்குகளை கண்காணி",
+        "resolutionRate": "தீர்வு விகிதம்",
+        "avgResolutionTime": "சராசரி தீர்வு நேரம்",
+        "activeCitizens": "செயலில் உள்ள குடிமக்கள்",
+        "reportsByCategory": "வகை வாரியாக அறிக்கைகள்",
+        "weeklyReports": "வாராந்திர அறிக்கைகள்",
+        "topAreas": "முதல் பகுதிகள்"
+    },
+    "profile": {
+        "level": "நிலை",
+        "rank": "தரவரிசை",
+        "badges": "பதக்கங்கள்",
+        "leaderboard": "தரவரிசைப் பட்டியல்",
+        "reports": "அறிக்கைகள்",
+        "upvotes": "மேல் வாக்குகள்",
+        "xpToNext": "அடுத்த நிலைக்கு XP"
+    },
+    "badges": {
+        "firstReport": "முதல் அறிக்கை",
+        "activeCitizen": "செயலில் உள்ள குடிமகன்",
+        "guardian": "காவலன்",
+        "champion": "சாம்பியன்",
+        "influencer": "செல்வாக்காளர்",
+        "problemSolver": "சிக்கல் தீர்ப்பவர்"
+    },
+    "status": {
+        "open": "திறந்த",
+        "inProgress": "செயல்பாட்டில்",
+        "resolved": "தீர்க்கப்பட்டது"
+    },
+    "severity": {
+        "low": "குறைந்த",
+        "medium": "மிதமான",
+        "critical": "தீவிரமான"
+    }
+}

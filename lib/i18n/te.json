@@ -1,0 +1,112 @@
+{
+    "common": {
+        "appName": "SAAAF",
+        "tagline": "AI-ఆధారిత పౌర నివేదన",
+        "login": "లాగిన్",
+        "logout": "లాగ్ అవుట్",
+        "submit": "సమర్పించు",
+        "cancel": "రద్దు చేయి",
+        "save": "సేవ్ చేయి",
+        "delete": "తొలగించు",
+        "edit": "సవరించు",
+        "view": "చూడు",
+        "close": "మూసివేయి",
+        "loading": "లోడ్ అవుతోంది...",
+        "error": "లోపం",
+        "success": "విజయం"
+    },
+    "nav": {
+        "feed": "ఫీడ్",
+        "map": "మ్యాప్",
+        "analytics": "విశ్లేషణ",
+        "officer": "అధికారి పానెల్",
+        "profile": "ప్రొఫైల్"
+    },
+    "home": {
+        "title": "సమాజ నివేదికలు",
+        "subtitle": "నివేదించిన సమస్యలు",
+        "open": "తెరిచి",
+        "resolved": "పరిష్కరించబడింది",
+        "noReports": "ఇంకా నివేదికలు లేవు",
+        "noReportsDesc": "మీ ప్రాంతంలో మొదటి సమస్యను నివేదించండి!",
+        "viewOnMap": "మ్యాప్‌లో చూడు",
+        "totalReports": "మొత్తం నివేదికలు",
+        "openIssues": "తెరిచిన సమస్యలు",
+        "filter": {
+            "all": "అన్నీ",
+            "pothole": "గుంత",
+            "garbage": "చెత్త",
+            "streetLight": "వీధి దీపం",
+            "waterLeak": "నీటి లీకేజీ"
+        }
+    },
+    "report": {
+        "title": "సమస్య నివేదించు",
+        "takePhoto": "ఫోటో తీయడానికి నొక్కండి",
+        "analyzing": "AI దృశ్యాన్ని విశ్లేషిస్తోంది...",
+        "detected": "గుర్తించబడింది",
+        "severity": "తీవ్రత",
+        "description": "వివరణ",
+        "submitReport": "నివేదిక సమర్పించు",
+        "xpReward": "+50 XP",
+        "duplicateTitle": "మోసం హెచ్చరిక!",
+        "duplicateDesc": "ఈ ఫోటో ఒక ఉన్న నివేదికతో సరిపోలింది.",
+        "reportAnyway": "ఏదేమైనా నివేదించు",
+        "aiConfidence": "AI విశ్వాసం"
+    },
+    "officer": {
+        "title": "అధికారి డాష్‌బోర్డ్",
+        "subtitle": "పౌర నివేదికలు నిర్వహించండి",
+        "search": "నివేదికలు వెతకండి...",
+        "inProgress": "పురోగతిలో",
+        "location": "స్థానం",
+        "upvotes": "అప్‌వోట్లు",
+        "date": "తేదీ",
+        "actions": "చర్యలు",
+        "updateStatus": "స్థితి నవీకరించు",
+        "setPriority": "ప్రాధాన్యత సెట్ చేయి",
+        "priority": {
+            "urgent": "అత్యవసరం",
+            "high": "అధిక",
+            "normal": "సాధారణ",
+            "low": "తక్కువ"
+        }
+    },
+    "analytics": {
+        "title": "విశ్లేషణ డాష్‌బోర్డ్",
+        "subtitle": "పౌర నివేదన ధోరణులను ట్రాక్ చేయండి",
+        "resolutionRate": "పరిష్కార రేటు",
+        "avgResolutionTime": "సగటు పరిష్కార సమయం",
+        "activeCitizens": "చురుకైన పౌరులు",
+        "reportsByCategory": "వర్గం వారీ నివేదికలు",
+        "weeklyReports": "వారపు నివేదికలు",
+        "topAreas": "అగ్ర ప్రాంతాలు"
+    },
+    "profile": {
+        "level": "స్థాయి",
+        "rank": "ర్యాంక్",
+        "badges": "బ్యాడ్జ్‌లు",
+        "leaderboard": "లీడర్‌బోర్డ్",
+        "reports": "నివేదికలు",
+        "upvotes": "అప్‌వోట్లు",
+        "xpToNext": "తదుపరి స్థాయికి XP"
+    },
+    "badges": {
+        "firstReport": "మొదటి నివేదిక",
+        "activeCitizen": "చురుకైన పౌరుడు",
+        "guardian": "సంరక్షకుడు",
+        "champion": "ఛాంపియన్",
+        "influencer": "ప్రభావశాలి",
+        "problemSolver": "సమస్య పరిష్కర్త"
+    },
+    "status": {
+        "open": "తెరిచి",
+        "inProgress": "పురోగతిలో",
+        "resolved": "పరిష్కరించబడింది"
+    },
+    "severity": {
+        "low": "తక్కువ",
+        "medium": "మధ్యస్థ",
+        "critical": "తీవ్రమైన"
+    }
+}
