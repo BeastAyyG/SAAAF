@@ -1,0 +1,112 @@
+{
+    "common": {
+        "appName": "SAAAF",
+        "tagline": "AI-চালিত নাগরিক রিপোর্টিং",
+        "login": "লগইন",
+        "logout": "লগআউট",
+        "submit": "জমা দিন",
+        "cancel": "বাতিল",
+        "save": "সংরক্ষণ করুন",
+        "delete": "মুছুন",
+        "edit": "সম্পাদনা করুন",
+        "view": "দেখুন",
+        "close": "বন্ধ করুন",
+        "loading": "লোড হচ্ছে...",
+        "error": "ত্রুটি",
+        "success": "সফল"
+    },
+    "nav": {
+        "feed": "ফিড",
+        "map": "মানচিত্র",
+        "analytics": "বিশ্লেষণ",
+        "officer": "অফিসার প্যানেল",
+        "profile": "প্রোফাইল"
+    },
+    "home": {
+        "title": "সম্প্রদায়ের রিপোর্ট",
+        "subtitle": "সমস্যা রিপোর্ট করা হয়েছে",
+        "open": "খোলা",
+        "resolved": "সমাধান হয়েছে",
+        "noReports": "এখনও কোনো রিপোর্ট নেই",
+        "noReportsDesc": "আপনার এলাকায় প্রথম সমস্যা রিপোর্ট করুন!",
+        "viewOnMap": "মানচিত্রে দেখুন",
+        "totalReports": "মোট রিপোর্ট",
+        "openIssues": "খোলা সমস্যা",
+        "filter": {
+            "all": "সব",
+            "pothole": "গর্ত",
+            "garbage": "আবর্জনা",
+            "streetLight": "রাস্তার আলো",
+            "waterLeak": "জল লিক"
+        }
+    },
+    "report": {
+        "title": "সমস্যা রিপোর্ট করুন",
+        "takePhoto": "ছবি তুলতে ট্যাপ করুন",
+        "analyzing": "AI দৃশ্য বিশ্লেষণ করছে...",
+        "detected": "শনাক্ত হয়েছে",
+        "severity": "গুরুত্ব",
+        "description": "বিবরণ",
+        "submitReport": "রিপোর্ট জমা দিন",
+        "xpReward": "+50 XP",
+        "duplicateTitle": "প্রতারণা সতর্কতা!",
+        "duplicateDesc": "এই ছবিটি একটি বিদ্যমান রিপোর্টের সাথে মেলে।",
+        "reportAnyway": "যাই হোক রিপোর্ট করুন",
+        "aiConfidence": "AI আস্থা"
+    },
+    "officer": {
+        "title": "অফিসার ড্যাশবোর্ড",
+        "subtitle": "নাগরিক রিপোর্ট পরিচালনা করুন",
+        "search": "রিপোর্ট খুঁজুন...",
+        "inProgress": "চলমান",
+        "location": "অবস্থান",
+        "upvotes": "আপভোট",
+        "date": "তারিখ",
+        "actions": "ক্রিয়া",
+        "updateStatus": "স্ট্যাটাস আপডেট করুন",
+        "setPriority": "অগ্রাধিকার সেট করুন",
+        "priority": {
+            "urgent": "জরুরি",
+            "high": "উচ্চ",
+            "normal": "স্বাভাবিক",
+            "low": "কম"
+        }
+    },
+    "analytics": {
+        "title": "বিশ্লেষণ ড্যাশবোর্ড",
+        "subtitle": "নাগরিক রিপোর্টিং প্রবণতা ট্র্যাক করুন",
+        "resolutionRate": "সমাধানের হার",
+        "avgResolutionTime": "গড় সমাধান সময়",
+        "activeCitizens": "সক্রিয় নাগরিক",
+        "reportsByCategory": "বিভাগ অনুযায়ী রিপোর্ট",
+        "weeklyReports": "সাপ্তাহিক রিপোর্ট",
+        "topAreas": "শীর্ষ এলাকা"
+    },
+    "profile": {
+        "level": "স্তর",
+        "rank": "র‍্যাংক",
+        "badges": "ব্যাজ",
+        "leaderboard": "লিডারবোর্ড",
+        "reports": "রিপোর্ট",
+        "upvotes": "আপভোট",
+        "xpToNext": "পরবর্তী স্তরে XP"
+    },
+    "badges": {
+        "firstReport": "প্রথম রিপোর্ট",
+        "activeCitizen": "সক্রিয় নাগরিক",
+        "guardian": "অভিভাবক",
+        "champion": "চ্যাম্পিয়ন",
+        "influencer": "প্রভাবশালী",
+        "problemSolver": "সমস্যা সমাধানকারী"
+    },
+    "status": {
+        "open": "খোলা",
+        "inProgress": "চলমান",
+        "resolved": "সমাধান হয়েছে"
+    },
+    "severity": {
+        "low": "কম",
+        "medium": "মাঝারি",
+        "critical": "গুরুতর"
+    }
+}

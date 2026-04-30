@@ -1,0 +1,112 @@
+{
+    "common": {
+        "appName": "SAAAF",
+        "tagline": "AI-સંચાલિત નાગરિક ફરિયાદ મંચ",
+        "login": "લૉગ ઇન",
+        "logout": "લૉગ આઉટ",
+        "submit": "સબમિટ કરો",
+        "cancel": "રદ કરો",
+        "save": "સાચવો",
+        "delete": "કાઢી નાખો",
+        "edit": "સંપાદિત કરો",
+        "view": "જુઓ",
+        "close": "બંધ કરો",
+        "loading": "લોડ થઈ રહ્યું છે...",
+        "error": "ભૂલ",
+        "success": "સફળ"
+    },
+    "nav": {
+        "feed": "ફીડ",
+        "map": "નકશો",
+        "analytics": "વિશ્લેષણ",
+        "officer": "અધિકારી પૅનલ",
+        "profile": "પ્રોફાઇલ"
+    },
+    "home": {
+        "title": "સામુદાયિક અહેવાલ",
+        "subtitle": "નોંધાયેલ સમસ્યાઓ",
+        "open": "ખુલ્લી",
+        "resolved": "ઉકેલ્યું",
+        "noReports": "હજુ સુધી કોઈ અહેવાલ નથી",
+        "noReportsDesc": "તમારા વિસ્તારમાં પ્રથમ સમસ્યા નોંધાવો!",
+        "viewOnMap": "નકશા પર જુઓ",
+        "totalReports": "કુલ અહેવાલ",
+        "openIssues": "ખુલ્લા મુદ્દા",
+        "filter": {
+            "all": "બધા",
+            "pothole": "ખાડો",
+            "garbage": "કચરો",
+            "streetLight": "શેરી લાઇટ",
+            "waterLeak": "પાણી લીક"
+        }
+    },
+    "report": {
+        "title": "સમસ્યા નોંધાવો",
+        "takePhoto": "ફોટો લેવા ટૅપ કરો",
+        "analyzing": "AI દૃશ્ય વિશ્લેષણ કરે છે...",
+        "detected": "ઓળખ્યું",
+        "severity": "ગંભીરતા",
+        "description": "વર્ણન",
+        "submitReport": "અહેવાલ સબમિટ કરો",
+        "xpReward": "+50 XP",
+        "duplicateTitle": "છેતરપિંડી ચેતવણી!",
+        "duplicateDesc": "આ ફોટો હાલના અહેવાલ સાથે મેળ ખાય છે.",
+        "reportAnyway": "ફિર ભી નોંધાવો",
+        "aiConfidence": "AI વિશ્વાસ"
+    },
+    "officer": {
+        "title": "અધિકારી ડૅશબોર્ડ",
+        "subtitle": "નાગરિક અહેવાલ સંચાલિત કરો",
+        "search": "અહેવાલ શોધો...",
+        "inProgress": "પ્રગતિ પર",
+        "location": "સ્થળ",
+        "upvotes": "અપવોટ",
+        "date": "તારીખ",
+        "actions": "ક્રિયાઓ",
+        "updateStatus": "સ્ટેટ્સ અપડેટ કરો",
+        "setPriority": "પ્રાથમિકતા સેટ કરો",
+        "priority": {
+            "urgent": "અત્યંત જરૂરી",
+            "high": "ઉચ્ચ",
+            "normal": "સામાન્ય",
+            "low": "ઓછું"
+        }
+    },
+    "analytics": {
+        "title": "વિશ્લેષણ ડૅશબોર્ડ",
+        "subtitle": "નાગરિક અહેવાલ વલણ ટ્રૅક કરો",
+        "resolutionRate": "નિરાકરણ દર",
+        "avgResolutionTime": "સરેરાશ નિરાકરણ સમય",
+        "activeCitizens": "સક્રિય નાગરિક",
+        "reportsByCategory": "શ્રેણી અનુસાર અહેવાલ",
+        "weeklyReports": "સાપ્તાહિક અહેવાલ",
+        "topAreas": "ટોચના વિસ્તારો"
+    },
+    "profile": {
+        "level": "સ્તર",
+        "rank": "ક્રમ",
+        "badges": "બૅજ",
+        "leaderboard": "લીડરબોર્ડ",
+        "reports": "અહેવાલ",
+        "upvotes": "અપવોટ",
+        "xpToNext": "આગલા સ્તર માટે XP"
+    },
+    "badges": {
+        "firstReport": "પ્રથમ અહેવાલ",
+        "activeCitizen": "સક્રિય નાગરિક",
+        "guardian": "રક્ષક",
+        "champion": "ચેમ્પિયન",
+        "influencer": "પ્રભાવશાળી",
+        "problemSolver": "સમસ્યા ઉકેલનાર"
+    },
+    "status": {
+        "open": "ખુલ્લી",
+        "inProgress": "પ્રગતિ પર",
+        "resolved": "ઉકેલ્યું"
+    },
+    "severity": {
+        "low": "ઓછું",
+        "medium": "મધ્યમ",
+        "critical": "ગંભીર"
+    }
+}

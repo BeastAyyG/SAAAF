@@ -2,6 +2,8 @@
 
 import { createClient } from "@/lib/supabase-server";
 import { revalidatePath } from "next/cache";
+import { computePriorityScore } from "@/lib/priority-engine";
+import { generateEmbedding, buildComplaintText } from "@/lib/embeddings";
 
 // Simple hash function for image comparison
 async function generateImageHash(file: File): Promise<string> {
@@ -84,21 +86,43 @@ export async function submitReportAction(
         imageHash = await generateImageHash(imageFile);
     }
 
-    // 2. Insert into DB
+    // 2a. Auto-assign priority via Bedrock
+    let priority = "NORMAL";
+    try {
+        const ps = await computePriorityScore(description, category, severity);
+        priority = ps.priority;
+    } catch (e) {
+        console.warn("Priority scoring failed, using default:", e);
+    }
+
+    // 2b. Generate embedding for duplicate/semantic search
+    let embedding: number[] = [];
+    try {
+        embedding = await generateEmbedding(buildComplaintText(category, description));
+    } catch (e) {
+        console.warn("Embedding generation failed:", e);
+    }
+
+    // 3. Insert into DB
+    const insertPayload: Record<string, unknown> = {
+        user_id: finalUserId,
+        category,
+        description,
+        severity,
+        lat,
+        lng,
+        image_url: imageUrl,
+        image_hash: imageHash,
+        status: "OPEN",
+        priority,
+    };
+    if (embedding.length > 0) {
+        insertPayload.embedding = JSON.stringify(embedding);
+    }
 
     const { error } = await supabase
         .from("reports")
-        .insert({
-            user_id: finalUserId,
-            category,
-            description,
-            severity,
-            lat,
-            lng,
-            image_url: imageUrl,
-            image_hash: imageHash,
-            status: "OPEN",
-        });
+        .insert(insertPayload);
 
     if (error) {
         console.error("Submission Error:", error);

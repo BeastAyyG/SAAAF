@@ -1,0 +1,112 @@
+{
+    "common": {
+        "appName": "SAAAF",
+        "tagline": "AI-ಚಾಲಿತ ನಾಗರಿಕ ದೂರು ವೇದಿಕೆ",
+        "login": "ಲಾಗಿನ್",
+        "logout": "ಲಾಗ್ ಔಟ್",
+        "submit": "ಸಲ್ಲಿಸು",
+        "cancel": "ರದ್ದು ಮಾಡು",
+        "save": "ಉಳಿಸು",
+        "delete": "ಅಳಿಸು",
+        "edit": "ತಿದ್ದು",
+        "view": "ನೋಡು",
+        "close": "ಮುಚ್ಚು",
+        "loading": "ಲೋಡ್ ಆಗುತ್ತಿದೆ...",
+        "error": "ದೋಷ",
+        "success": "ಯಶಸ್ಸು"
+    },
+    "nav": {
+        "feed": "ಫೀಡ್",
+        "map": "ನಕ್ಷೆ",
+        "analytics": "ವಿಶ್ಲೇಷಣೆ",
+        "officer": "ಅಧಿಕಾರಿ ಪ್ಯಾನೆಲ್",
+        "profile": "ಪ್ರೊಫೈಲ್"
+    },
+    "home": {
+        "title": "ಸಮುದಾಯ ವರದಿಗಳು",
+        "subtitle": "ವರದಿ ಮಾಡಿದ ಸಮಸ್ಯೆಗಳು",
+        "open": "ತೆರೆದ",
+        "resolved": "ಪರಿಹರಿಸಲಾಗಿದೆ",
+        "noReports": "ಇನ್ನೂ ಯಾವುದೇ ವರದಿಗಳಿಲ್ಲ",
+        "noReportsDesc": "ನಿಮ್ಮ ಪ್ರದೇಶದ ಮೊದಲ ಸಮಸ್ಯೆ ವರದಿ ಮಾಡಿ!",
+        "viewOnMap": "ನಕ್ಷೆಯಲ್ಲಿ ನೋಡಿ",
+        "totalReports": "ಒಟ್ಟು ವರದಿಗಳು",
+        "openIssues": "ತೆರೆದ ಸಮಸ್ಯೆಗಳು",
+        "filter": {
+            "all": "ಎಲ್ಲಾ",
+            "pothole": "ಗುಂಡಿ",
+            "garbage": "ಕಸ",
+            "streetLight": "ರಸ್ತೆ ದೀಪ",
+            "waterLeak": "ನೀರಿನ ಸೋರಿಕೆ"
+        }
+    },
+    "report": {
+        "title": "ಸಮಸ್ಯೆ ವರದಿ ಮಾಡಿ",
+        "takePhoto": "ಫೋಟೋ ತೆಗೆಯಲು ಟ್ಯಾಪ್ ಮಾಡಿ",
+        "analyzing": "AI ದೃಶ್ಯ ವಿಶ್ಲೇಷಿಸುತ್ತಿದೆ...",
+        "detected": "ಪತ್ತೆಯಾಗಿದೆ",
+        "severity": "ತೀವ್ರತೆ",
+        "description": "ವಿವರಣೆ",
+        "submitReport": "ವರದಿ ಸಲ್ಲಿಸಿ",
+        "xpReward": "+50 XP",
+        "duplicateTitle": "ವಂಚನೆ ಎಚ್ಚರಿಕೆ!",
+        "duplicateDesc": "ಈ ಫೋಟೋ ಅಸ್ತಿತ್ವದಲ್ಲಿರುವ ವರದಿಯೊಂದಿಗೆ ಹೊಂದಿಕೆಯಾಗುತ್ತದೆ.",
+        "reportAnyway": "ಹೇಗಿದ್ದರೂ ವರದಿ ಮಾಡಿ",
+        "aiConfidence": "AI ವಿಶ್ವಾಸ"
+    },
+    "officer": {
+        "title": "ಅಧಿಕಾರಿ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+        "subtitle": "ನಾಗರಿಕ ವರದಿಗಳನ್ನು ನಿರ್ವಹಿಸಿ",
+        "search": "ವರದಿಗಳನ್ನು ಹುಡುಕಿ...",
+        "inProgress": "ಪ್ರಗತಿಯಲ್ಲಿ",
+        "location": "ಸ್ಥಳ",
+        "upvotes": "ಅಪ್‌ವೋಟ್‌ಗಳು",
+        "date": "ದಿನಾಂಕ",
+        "actions": "ಕ್ರಿಯೆಗಳು",
+        "updateStatus": "ಸ್ಥಿತಿ ನವೀಕರಿಸಿ",
+        "setPriority": "ಆದ್ಯತೆ ಹೊಂದಿಸಿ",
+        "priority": {
+            "urgent": "ತುರ್ತು",
+            "high": "ಹೆಚ್ಚಿನ",
+            "normal": "ಸಾಮಾನ್ಯ",
+            "low": "ಕಡಿಮೆ"
+        }
+    },
+    "analytics": {
+        "title": "ವಿಶ್ಲೇಷಣೆ ಡ್ಯಾಶ್‌ಬೋರ್ಡ್",
+        "subtitle": "ನಾಗರಿಕ ವರದಿ ಪ್ರವೃತ್ತಿಗಳನ್ನು ಟ್ರ್ಯಾಕ್ ಮಾಡಿ",
+        "resolutionRate": "ಪರಿಹಾರ ದರ",
+        "avgResolutionTime": "ಸರಾಸರಿ ಪರಿಹಾರ ಸಮಯ",
+        "activeCitizens": "ಸಕ್ರಿಯ ನಾಗರಿಕರು",
+        "reportsByCategory": "ವರ್ಗದ ಪ್ರಕಾರ ವರದಿಗಳು",
+        "weeklyReports": "ವಾರಾಂತ್ಯ ವರದಿಗಳು",
+        "topAreas": "ಉನ್ನತ ಪ್ರದೇಶಗಳು"
+    },
+    "profile": {
+        "level": "ಮಟ್ಟ",
+        "rank": "ಶ್ರೇಣಿ",
+        "badges": "ಬ್ಯಾಡ್ಜ್‌ಗಳು",
+        "leaderboard": "ಲೀಡರ್‌ಬೋರ್ಡ್",
+        "reports": "ವರದಿಗಳು",
+        "upvotes": "ಅಪ್‌ವೋಟ್‌ಗಳು",
+        "xpToNext": "ಮುಂದಿನ ಮಟ್ಟಕ್ಕೆ XP"
+    },
+    "badges": {
+        "firstReport": "ಮೊದಲ ವರದಿ",
+        "activeCitizen": "ಸಕ್ರಿಯ ನಾಗರಿಕ",
+        "guardian": "ರಕ್ಷಕ",
+        "champion": "ಚಾಂಪಿಯನ್",
+        "influencer": "ಪ್ರಭಾವಶಾಲಿ",
+        "problemSolver": "ಸಮಸ್ಯೆ ಪರಿಹರಿಸುವವ"
+    },
+    "status": {
+        "open": "ತೆರೆದ",
+        "inProgress": "ಪ್ರಗತಿಯಲ್ಲಿ",
+        "resolved": "ಪರಿಹರಿಸಲಾಗಿದೆ"
+    },
+    "severity": {
+        "low": "ಕಡಿಮೆ",
+        "medium": "ಮಧ್ಯಮ",
+        "critical": "ತೀವ್ರ"
+    }
+}

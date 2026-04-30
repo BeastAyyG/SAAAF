@@ -1,17 +1,28 @@
 "use server";
 
-import { invokeBedrockText } from "@/lib/bedrock";
+import { translateToEnglish, translateFromEnglish, type SupportedLanguageCode } from "@/lib/aws-translate";
 
+/** Translate any Indian-language text to English (for normalisation before storage) */
 export async function translateAction(text: string): Promise<string> {
     if (!text || !text.trim()) return "";
 
     try {
-        const prompt = `Translate the following Hindi text to English. If the text is already English, return it as is. Strictly return ONLY the translated text, no preamble or quotes.
+        return await translateToEnglish(text);
+    } catch (error) {
+        console.error("Translation Error:", error);
+        return text;
+    }
+}
 
-Text: "${text}"`;
+/** Translate English text into the specified target Indian language */
+export async function translateToLanguageAction(
+    text: string,
+    targetLang: SupportedLanguageCode
+): Promise<string> {
+    if (!text || !text.trim()) return "";
 
-        const result = await invokeBedrockText(prompt);
-        return result.trim();
+    try {
+        return await translateFromEnglish(text, targetLang);
     } catch (error) {
         console.error("Translation Error:", error);
         return text;

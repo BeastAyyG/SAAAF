@@ -1,0 +1,112 @@
+{
+    "common": {
+        "appName": "SAAAF",
+        "tagline": "AI-ଚାଳିତ ନାଗରିକ 民怨 ମଞ୍ଚ",
+        "login": "ଲଗ ଇନ",
+        "logout": "ଲଗ ଆଉଟ",
+        "submit": "ଦାଖଲ କରନ୍ତୁ",
+        "cancel": "ବାତିଲ",
+        "save": "ସଞ୍ଚୟ",
+        "delete": "ଅପସାରଣ",
+        "edit": "ସଂଶୋଧନ",
+        "view": "ଦେଖନ୍ତୁ",
+        "close": "ବନ୍ଦ",
+        "loading": "ଲୋଡ ହେଉଛି...",
+        "error": "ତ୍ରୁଟି",
+        "success": "ସଫଳ"
+    },
+    "nav": {
+        "feed": "ଫିଡ",
+        "map": "ମ୍ୟାପ",
+        "analytics": "ବିଶ୍ଳେଷଣ",
+        "officer": "ଅଧିକାରୀ ପ୍ୟାନେଲ",
+        "profile": "ପ୍ରୋଫାଇଲ"
+    },
+    "home": {
+        "title": "ସାମୁଦାୟିକ ରିପୋର୍ଟ",
+        "subtitle": "ଦାଖଲ ସମସ୍ୟାଗୁଡ଼ିକ",
+        "open": "ଖୋଲା",
+        "resolved": "ସମାଧାନ ହୋଇଛି",
+        "noReports": "ଆଜି ପର୍ଯ୍ୟନ୍ତ କୌଣସି ରିପୋର୍ଟ ନାହିଁ",
+        "noReportsDesc": "ଆପଣଙ୍କ ଅଞ୍ଚଳରେ ପ୍ରଥମ ସମସ୍ୟା ରିପୋର୍ଟ କରନ୍ତୁ!",
+        "viewOnMap": "ମ୍ୟାପରେ ଦେଖନ୍ତୁ",
+        "totalReports": "ମୋଟ ରିପୋର୍ଟ",
+        "openIssues": "ଖୋଲା ସମସ୍ୟା",
+        "filter": {
+            "all": "ସମସ୍ତ",
+            "pothole": "ଗର୍ତ",
+            "garbage": "ଆବର୍ଜନା",
+            "streetLight": "ରାସ୍ତା ଆଲୋକ",
+            "waterLeak": "ଜଳ ଲିକ"
+        }
+    },
+    "report": {
+        "title": "ସମସ୍ୟା ରିପୋର୍ଟ",
+        "takePhoto": "ଫଟୋ ତୋଳିବାକୁ ଟ୍ୟାପ କରନ୍ତୁ",
+        "analyzing": "AI ଦୃଶ୍ୟ ବିଶ୍ଳେଷଣ ହେଉଛି...",
+        "detected": "ଚିହ୍ନଟ ହୋଇଛି",
+        "severity": "ଗୁରୁତ୍ୱ",
+        "description": "ବିବରଣ",
+        "submitReport": "ରିପୋର୍ଟ ଦାଖଲ",
+        "xpReward": "+50 XP",
+        "duplicateTitle": "ଠକାମି ସତର୍କତା!",
+        "duplicateDesc": "ଏହି ଫଟୋ ଏକ ବିଦ୍ୟମାନ ରିପୋର୍ଟ ସହ ମେଳ ଖାଏ।",
+        "reportAnyway": "ତଥାପି ରିପୋର୍ଟ",
+        "aiConfidence": "AI ବିଶ୍ୱାସ"
+    },
+    "officer": {
+        "title": "ଅଧିକାରୀ ଡ୍ୟାସ୍‌ବୋର୍ଡ",
+        "subtitle": "ନାଗରିକ ରିପୋର୍ଟ ପରିଚାଳନା",
+        "search": "ରିପୋର୍ଟ ଖୋଜନ୍ତୁ...",
+        "inProgress": "ଅଗ୍ରଗତି",
+        "location": "ସ୍ଥାନ",
+        "upvotes": "ଅପ୍‌ଭୋଟ",
+        "date": "ତାରିଖ",
+        "actions": "କ୍ରିୟା",
+        "updateStatus": "ସ୍ଥିତି ଅପଡ଼େଟ",
+        "setPriority": "ଅଗ୍ରାଧିକାର ସ୍ଥାପନ",
+        "priority": {
+            "urgent": "ଅଣ-ଜରୁରୀ",
+            "high": "ଉଚ୍ଚ",
+            "normal": "ସାଧାରଣ",
+            "low": "କମ"
+        }
+    },
+    "analytics": {
+        "title": "ବିଶ୍ଳେଷଣ ଡ୍ୟାସ୍‌ବୋର୍ଡ",
+        "subtitle": "ନାଗରିକ ରିପୋର୍ଟ ପ୍ରବୃତ୍ତି ଟ୍ରାକ",
+        "resolutionRate": "ସମାଧାନ ହାର",
+        "avgResolutionTime": "ହାରାହାରି ସମାଧାନ ସମୟ",
+        "activeCitizens": "ସଚ୍ଛଳ ନାଗରିକ",
+        "reportsByCategory": "ବର୍ଗ ଅନୁଯାୟୀ ରିପୋର୍ଟ",
+        "weeklyReports": "ସାପ୍ତାହିକ ରିପୋର୍ଟ",
+        "topAreas": "ଶ୍ରେଷ୍ଠ ଅଞ୍ଚଳ"
+    },
+    "profile": {
+        "level": "ସ୍ତର",
+        "rank": "ର୍ୟାଙ୍କ",
+        "badges": "ବ୍ୟାଜ",
+        "leaderboard": "ଲିଡ଼ର ବୋର୍ଡ",
+        "reports": "ରିପୋର୍ଟ",
+        "upvotes": "ଅପ୍‌ଭୋଟ",
+        "xpToNext": "ପରବର୍ତ୍ତୀ ସ୍ତର XP"
+    },
+    "badges": {
+        "firstReport": "ପ୍ରଥମ ରିପୋର୍ଟ",
+        "activeCitizen": "ସଚ୍ଛଳ ନାଗରିକ",
+        "guardian": "ରକ୍ଷକ",
+        "champion": "ଚ୍ୟାମ୍ପିଅନ",
+        "influencer": "ପ୍ରଭାବଶାଳୀ",
+        "problemSolver": "ସମସ୍ୟା ସମାଧାନକାରୀ"
+    },
+    "status": {
+        "open": "ଖୋଲା",
+        "inProgress": "ଅଗ୍ରଗତି",
+        "resolved": "ସମାଧାନ"
+    },
+    "severity": {
+        "low": "କମ",
+        "medium": "ମଧ୍ୟମ",
+        "critical": "ଗୁରୁତ୍ୱପୂର୍ଣ"
+    }
+}
